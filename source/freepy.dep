@@ -1,0 +1,12 @@
+# Microsoft Developer Studio Generated Dependency File, included by freepy.mak
+
+.\freepy.rc : \
+	".\freepy.ico"\
+	".\Penindic.ico"\
+	".\status.bmp"\
+	
+
+.\Process.c : \
+	"g:\vc6\vc98\include\basetsd.h"\
+	"g:\vc6\vc98\include\imm.h"\
+	

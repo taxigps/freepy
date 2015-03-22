@@ -1,0 +1,263 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "winuser.h"
+#include "winver.h"
+#include "winresrc.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x3L
+ FILESUBTYPE 0xbL
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "PRIVATE\0"
+            VALUE "FileDescription", "自由拼音输入法 版本2.2\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "FreePY Input Method Editor\0"
+            VALUE "LegalCopyright", "Copyright _ 1999\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "FREEPY.IME\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "FREEPY\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""winuser.h""\r\n"
+    "#include ""winver.h""\r\n"
+    "#include ""winresrc.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+FREEPYIMEICON           ICON    DISCARDABLE     "freepy.ico"
+INDICOPENICON           ICON    DISCARDABLE     "Penindic.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+STATUSBITMAP            BITMAP  DISCARDABLE     "status.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+FREEPYMENU MENU DISCARDABLE 
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM "设置 …",                     IDM_SET
+        MENUITEM SEPARATOR
+        MENUITEM "帮助 …",                     IDM_HELP
+        MENUITEM SEPARATOR
+        MENUITEM "关于 …",                     IDM_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+DIALOGABOUT DIALOG DISCARDABLE  50, 50, 170, 117
+STYLE DS_MODALFRAME | DS_NOIDLEMSG | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "关于自由拼音输入法"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,67,97,31,13
+    LTEXT           "自由拼音输入法",IDC_STATIC,48,7,80,9
+    LTEXT           "版本2.2",IDC_STATIC,65,22,49,8
+    LTEXT           "版权所有 (c)  1999 ，李振春",IDC_STATIC,38,37,109,12
+    LTEXT           "email:  zhchli@163.net",IDC_STATIC,46,56,98,10
+    LTEXT           "homepage: http://freepy.yeah.net",IDC_STATIC,27,71,130,
+                    13
+END
+
+DIALOGSET DIALOG DISCARDABLE  50, 50, 202, 91
+STYLE DS_MODALFRAME | DS_NOIDLEMSG | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "输入法设置"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,161,18,34,14
+    PUSHBUTTON      "取消",IDCANCEL,161,62,34,14
+    GROUPBOX        "功能设置",IDC_STATIC,7,11,57,73
+    CONTROL         "自动调整",IDC_CHECKSORT,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,14,23,46,9
+    GROUPBOX        "模糊音设置",IDC_STATIC,70,11,87,73
+    CONTROL         "c ch; s sh; z zh模糊",IDC_CHECKFUZZYC,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,76,22,76,9
+    CONTROL         "h f模糊",IDC_CHECKFUZZYH,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,76,51,64,8
+    CONTROL         "n l模糊",IDC_CHECKFUZZYN,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,76,36,66,10
+    CONTROL         "后鼻音模糊",IDC_CHECKFUZZYB,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,76,66,71,11
+    CONTROL         "光标跟随",IDC_CHECKFOLLOW,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,14,37,41,9
+    CONTROL         "GBK码",IDC_CHECKGBK,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,14,50,45,11
+    CONTROL         "传统风格",IDC_CHECKSHAPE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,14,64,45,12
+END
+
+DIALOGCONFIG DIALOG DISCARDABLE  0, 0, 202, 125
+STYLE DS_MODALFRAME | DS_NOIDLEMSG | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "自由拼音设置"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,165,22,30,14
+    PUSHBUTTON      "取消",IDCANCEL,165,79,30,14
+    GROUPBOX        "功能设置",IDC_STATIC,7,15,56,103
+    GROUPBOX        "模糊音设置",IDC_STATIC,67,16,92,102
+    CONTROL         "c ch; s sh; z zh模糊",CONFIGFUZZYC,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,74,20,78,13
+    CONTROL         "n l模糊",CONFIGFUZZYN,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,74,36,52,12
+    CONTROL         "h f模糊",CONFIGFUZZYH,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,74,53,53,9
+    CONTROL         "自动调整",CONFIGSORT,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,13,24,46,8
+    CONTROL         "全角",CONFIGFULLSHAPE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,13,37,41,11
+    CONTROL         "中文标点",CONFIGPUNCT,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,13,52,45,13
+    CONTROL         "后鼻音模糊",CONFIGFUZZYB,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,74,68,76,11
+    CONTROL         "光标跟随",CONFIGFOLLOW,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,14,69,42,10
+    CONTROL         "GBK码",CONFIGGBK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    14,82,43,13
+    CONTROL         "传统风格",CONFIGSHAPE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,14,96,46,15
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    DIALOGABOUT, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 163
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 110
+    END
+
+    DIALOGSET, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 195
+        TOPMARGIN, 1
+        BOTTOMMARGIN, 84
+    END
+
+    DIALOGCONFIG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 195
+        BOTTOMMARGIN, 118
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
